@@ -37,7 +37,99 @@
     padding: 15px 0px;
 }
 
+/* footer */
+.footer {
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+    margin: auto;
+    background-color: white;
+}
 
+.footer-width {
+    max-width: 1470px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin: auto;
+    height: 400px;
+}
+/*     display: flex;
+    flex-direction: column;
+    align-items: start;
+    max-width: 620px;
+    padding: 20px;
+    color: var(--main-theme);
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 50; */
+.footer-info {
+    line-height: 30px;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 50;
+    color: var(--main-sub);
+    max-width: 610px;
+    max-height: 290px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 20px;
+}
+
+.title {
+    margin: 35px auto 35px 0px;
+    font-size: 70px;
+    letter-spacing: 1px;
+    color: var(--main-theme);
+}
+
+.picture {
+    padding: 20px;
+    width: 900px;
+    margin: auto;
+    display: flex;
+    justify-content:end;
+    align-items: center;
+    gap: 10px 80px;
+}
+.image-box {
+    border-radius: 25px 0px 25px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    width: 230px;
+    height: 230px;
+    box-shadow: 10px 10px 2px lightgray;
+    gap: 15px;
+    border: 7px solid var(--main-sub);
+}
+.gmail {
+    background-color: var(--main-sub);
+    border: none;
+}
+/* image gmail */
+.image-gmail{
+    padding-top: 30px;
+    width: 120px;
+    transition: transform 0.7s, filter 0.7s;
+}
+.image-gmail:hover {
+    filter: drop-shadow(1px 1px 10px white);
+    transform: scale(1.3);
+}
+.image-gmail-text {
+    padding-bottom: 10px;
+    color: white;
+    font-size: 15px;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 50;
+    letter-spacing: 1px;
+}
+/* image astronut */
+.image-astronut {
+    display: flex;
+}
 
 
 
