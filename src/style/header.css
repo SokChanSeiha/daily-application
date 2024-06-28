@@ -1,3 +1,26 @@
+@import url("style.css");
+
+/* .header {
+
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 15px;
+    height: 30px;
+    max-width: 1440px;
+
+
+    color: white;
+    font-size: xx-large;
+    font-weight: bold;
+    }
+
+.icon-burger {
+    width: 35px;
+} */
+
+/* header */
 .header {
     /* structure block */
     margin: auto;
@@ -6,7 +29,7 @@
     align-items: center;
     padding: 15px 15px;
     height: 30px;
-    max-width: 1440px;
+    max-width: var(--standard-width);
 
     /* font & color styling */
     color: white;

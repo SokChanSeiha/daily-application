@@ -1,11 +1,4 @@
-:root {
-    /* color styling */
-    --main-theme: #2C3349;
-    --main-sub: #636E91;
-    --footer-theme: white;
-    --standard-width: 1440px;
-    --full-height: 100%;
-}
+@import url("style.css");
 
 /* create */
 .hero {
@@ -140,23 +133,3 @@
 
 
 
-/* header */
-.header {
-    /* structure block */
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 15px;
-    height: 30px;
-    max-width: var(--standard-width);
-
-    /* font & color styling */
-    color: white;
-    font-size: xx-large;
-    font-weight: bold;
-    }
-
-.icon-burger {
-    width: 35px;
-}

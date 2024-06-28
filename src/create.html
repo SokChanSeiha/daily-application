@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Create Page</title>
     <link rel="stylesheet" href="./style/create-page.css" />
+    <link rel="stylesheet" href="./style/footer.css" />
+    <link rel="stylesheet" href="./style/header.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
 </head>
 <body class="screen-color">
-    <!-- header section -->
-    <header class="header header-size">
-        <article>Dairy Application</article>
-        <img src="./icon/hamburger.svg" class="icon-burger" alt="hamburger menu bar">
-    </header>
+    <!-- "header section" exported from component-->
+    <header-section></header-section>
 
     <!-- main body content -->
     <main class="body">
@@ -48,4 +47,6 @@
 
     
 </body>
+
+<script type="module" src="./components/header.js"></script>
 </html>

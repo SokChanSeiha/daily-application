@@ -4,19 +4,21 @@ const createHeader = () => {
     <article>
         Dairy Application
     </article>
-    <img src="../icon/hamburger.svg" class="icon-burger" alt="hamburger menu bar">
+    <img src="./icon/hamburger.svg" class="icon-burger" alt="hamburger menu bar">
     </header>
     `
 }
 
-class HomePage extends HTMLElement {
-    constructor (){
-        super()
+class HeaderSection extends HTMLElement {
+    constructor() {
+        super();
     }
-    connectedCallback(){
-        this.innerHTML = createNavbar();
+
+    connectedCallback() {
+        this.innerHTML = createHeader();
     }
 }
 
+
 //naming a callback component for "Header component"
-customElements.define("home-page-content", HomePage)
+customElements.define("header-section", HeaderSection)
