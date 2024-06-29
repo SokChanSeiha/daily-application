@@ -7,6 +7,11 @@
     max-width: 100%; /* Optional: keep the image responsive */
     height: auto;
     background-color: black;
+    margin: auto;
+}
+.dinosour-image {
+    min-width: 40%;
+    padding: 0px 25px;
 }
 
 /* body */
@@ -17,8 +22,6 @@
     min-height: 1200px;
     height: var(--full-height);
 }
-
-
 
 .screen-color {
     background-color: black;
@@ -49,7 +52,6 @@
     cursor: pointer;
 }
 
-
 /* Content cover all entries box */
 .entries-content {
     display: grid;
@@ -59,20 +61,6 @@
     gap: 20px; /* Uniform gap for grid items */
     /* background-color: rgb(170, 154, 231); Uncomment if background color is needed */
 }
-
-/* Responsive design for tablets */
-@media screen and (max-width: 1200px) {
-    .entries-content {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-/* Responsive design for mobile devices */
-@media screen and (max-width: 800px) {
-    .entries-content {
-        grid-template-columns: 1fr;
-    }
-}
-
 
 .entry-card {
     margin: 5px 0px;
@@ -85,11 +73,7 @@
     background-color: white;
     border-radius: 20px;
     border:  10px solid #8290be;
-}
-@media screen and (max-width: 800px){
-    .entry-card {
-        max-height: 150px;
-    }
+
 }
 
 .title-input {
@@ -106,11 +90,7 @@
     font-size: 40px; /* Adjust the font size */
     color: #d6d6d6;
 }
-@media screen and (max-width: 800px){
-    .title-input::placeholder {
-        font-size: 25px; /* Adjust the font size */
-    }
-}
+
 
 .description-input {
     margin: 5px 0px;
@@ -129,17 +109,7 @@
     font-size: 20px;
     color: #d6d6d6;
 }
-@media screen and (max-width: 800px){
-    .description-input {
-        height: 50px;
-        font-size: 15px;
-        border-bottom: none;
-    }
-    .description-input::placeholder {
-        font-size: 15px;
-        color: #d6d6d6;
-    }
-}
+
 
 .description-input::-webkit-scrollbar { width: 0 !important }
 
@@ -155,12 +125,14 @@
     outline: none; /* This removes the focus border */
     background-color: #8290be;
     padding: 3px 5px;
+    width: 120px;
     border-radius: 10px;
     font-size: 15px;
     color: white;
 }
 
 .option-buttons {
+    margin-left: 20px;
     width: 140px;
     display: flex;
     justify-content: space-between;
@@ -186,6 +158,51 @@
     padding: 5px;
     border-radius: 10px;
 }
+
+/* Responsive design for tablets */
+@media screen and (max-width: 1100px) {
+    .entries-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 800px){
+    
+}
+
+/* Responsive design for mobile devices */
+/* @media screen and (max-width: 800px) {
+    .entries-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .entry-card {
+        max-height: 150px;
+    }
+}
+@media screen and (max-width: 800px){
+    .title-input::placeholder {
+        font-size: 25px; 
+    }
+}
+@media screen and (max-width: 800px){
+    .description-input {
+        height: 50px;
+        font-size: 15px;
+        border-bottom: none;
+    }
+    .description-input::placeholder {
+        font-size: 15px;
+        color: #d6d6d6;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .option-buttons a img{
+
+    }
+} */
 
 
 
