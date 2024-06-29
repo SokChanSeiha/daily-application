@@ -11,23 +11,76 @@
 
 /* body */
 .body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: auto;
     background-color: var(--main-theme);
     min-height: 1200px;
     height: var(--full-height);
 }
-
 .screen-color {
     background-color: black;
 }
 
-
 .content {
-    max-width: 1440px;
-    margin: auto;
+    /* margin: auto; */
     color: white;
     background: var(--main-theme);
+    padding: 15px 0px; 
+    max-width: 1470px;
+    margin: auto;
+}
+
+.entries-content {
     padding: 15px 0px;
+    background-color: #fff;
+    color: black;
+}    
+
+.category {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: black;
+    background-color: red;
+}
+
+.category-box {
+    background-color: #fff;
+    padding: 3px 20px;
+    border-radius: 25px;
+}
+
+/* content cover all entries box */
+.entries-content {
+    justify-content: center;
+    padding: 15px 25px;
+    display: flex;
+    gap: 10px;
+    background-color: rgb(170, 154, 231);
+}
+
+.entry-card {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    max-height: 500px;
+    background-color: white;
+    border-radius: 20px;
+    border:  10px solid #8290be;
+}
+
+.title-input {
+    height: 50px;
+    width: 350px;
+    border: none;
+    outline: none; /* This removes the focus border */
+}
+.title-input::placeholder {
+    font-size: 40px; /* Adjust the font size */
+    color:#d6d6d6;     /* You can also change the color */
 }
 
 
