@@ -1,41 +1,43 @@
 @import url("style.css");
 
-/* create */
+/* hero section: specificly about the dinosuar image */
 .hero {
     display: flex;
     justify-content: center;
-    max-width: 100%; /* Optional: keep the image responsive */
+    max-width: 100%;
     height: auto;
-    background-color: black;
-    margin: auto;
+    background-color: black;      
 }
+/* the dinosoaur image is auto responsive due to width set as % */
 .dinosour-image {
     min-width: 40%;
     padding: 0px 25px;
 }
 
-/* body */
-.body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+.body {    
     margin: auto;
     background-color: var(--main-theme);
-    min-height: 1200px;
+    height: 1200px;
     height: var(--full-height);
 }
 
+/* black background for hero section */
 .screen-color {
     background-color: black;
 }
 
+/* a section which covers main contents 
+including: category, entries list, create button */
 .content {
-    color: white;
     padding: 15px 0px; 
     background: var(--main-theme);
     max-width: var(--standard-width);
     margin: auto;
 }  
 
+/* a div for category area's properties */
 .category {
+    font-weight: 600;
     max-width: 500px;
     padding: 15px 25px;
     display: flex;
@@ -45,23 +47,24 @@
     color: black;
 }
 
+/* adjusting color and box size for category */
 .category-box {
-    background-color: #fff;
+    background-color: white;
     padding: 3px 22px;
-    border-radius: 25px;
+    border-radius: var(--perfect-radius);
     cursor: pointer;
 }
 
-/* Content cover all entries box */
+/* Content covers all entries box */
 .entries-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    max-width: 1440px;
+    max-width: var(--standard-width);
     padding: 15px 25px;
-    gap: 20px; /* Uniform gap for grid items */
-    /* background-color: rgb(170, 154, 231); Uncomment if background color is needed */
+    gap: 20px;
 }
 
+/* customizations on entry card */
 .entry-card {
     margin: 5px 0px;
     padding: 15px;
@@ -71,11 +74,12 @@
     min-width: 200px;
     max-height: 600px;     /* 150px */
     background-color: white;
-    border-radius: 20px;
-    border:  10px solid #8290be;
+    border-radius: var(--perfect-radius);
+    border:  10px solid var(--main-sub);
 
 }
 
+/* customizations on entry input for title */
 .title-input {
     font-weight:bold ;
     font-size: 40px;
@@ -86,12 +90,13 @@
     text-overflow: ellipsis;
     overflow: hidden;
 }
+
 .title-input::placeholder {
     font-size: 40px; /* Adjust the font size */
     color: #d6d6d6;
 }
 
-
+/* customizations on entry input for description */
 .description-input {
     margin: 5px 0px;
     padding: 20px 5px;
@@ -110,9 +115,10 @@
     color: #d6d6d6;
 }
 
-
+/* hide the scrolling display*/
 .description-input::-webkit-scrollbar { width: 0 !important }
 
+/* setting grid area for inputs to collect data */
 .data-collectors {
     display: flex;
     gap: 5px;
@@ -120,17 +126,19 @@
     justify-content: space-between;
 }
 
+/* design for date button */
 .date-input {
     border: none;
     outline: none; /* This removes the focus border */
     background-color: #8290be;
     padding: 3px 5px;
     width: 120px;
-    border-radius: 10px;
+    border-radius: var(--default-radius);
     font-size: 15px;
     color: white;
 }
 
+/* a div area which covers on view,  edit, delete */
 .option-buttons {
     margin-left: 20px;
     width: 140px;
@@ -144,65 +152,154 @@
     width: 25px;
     background-color: #049cd8;
     padding: 5px;
-    border-radius: 10px;
+    border-radius: var(--default-radius);
 }
 .edit-icon {
     width: 25px;
     background-color: #FFF000;
     padding: 5px;
-    border-radius: 10px;
+    border-radius: var(--default-radius);
 }
 .delete-icon {
     width: 21px;
     background-color: red;
     padding: 5px;
-    border-radius: 10px;
+    border-radius: var(--default-radius);
 }
 
 /* Responsive design for tablets */
 @media screen and (max-width: 1100px) {
+
+    .category {
+        font-weight: 600;
+        max-width: 400px;
+        font-size: 25px;
+    }
+    
+    .category-box {
+        background-color: #fff;
+        padding: 3px 15px;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+    
+    /* Content cover all entries box */
     .entries-content {
         grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
     }
-}
-@media screen and (max-width: 800px){
+
+    .entry-card {
+        margin: 5px 0px;
+        padding: 15px;
+        max-height: 250px;
+        border-radius: var(--perfect-radius);
+        border:  8px solid var(--main-sub);
+    }
     
+    .title-input {
+        font-size: 35px;
+    }
+    .title-input::placeholder {
+        font-size: 35px; /* Adjust the font size */
+    }
+    
+    .description-input {
+        font-size: 18px;
+        height: 60px;
+    }
+    .description-input::placeholder {
+        font-size: 18px;
+    }
+    
+    .date-input {
+        width: 110px;
+        font-size: 14px;
+    }
+    
+    .option-buttons {
+        width: 130px;
+    }
+    
+    /* The 3 options button */
+    .view-icon {
+        width: 23px;
+    }
+    .edit-icon {
+        width: 23px;
+    }
+    .delete-icon {
+        width: 19.5px;
+    }
 }
 
 /* Responsive design for mobile devices */
-/* @media screen and (max-width: 800px) {
+@media screen and (max-width: 800px){
+    .category {
+        font-weight: 600;
+        max-width: 400px;
+        font-size: 25px;
+    }
+    
+    .category-box {
+        background-color: #fff;
+        padding: 3px 15px;
+        border-radius: 25px;
+        cursor: pointer;
+    }
+    
+    /* Content cover all entries box */
     .entries-content {
         grid-template-columns: 1fr;
+        gap: 10px;
     }
-}
 
-@media screen and (max-width: 800px){
     .entry-card {
-        max-height: 150px;
+        max-height: 120px;
+        border: 5px solid var(--main-sub);
+
+        /* margin: 5px 0px;
+        padding: 15px;
+        max-height: 250px;
+        border-radius: var(--perfect-radius);
+        border:  8px solid var(--main-sub); */
     }
-}
-@media screen and (max-width: 800px){
+    
+    .title-input {
+        font-size: 25px;
+    }
     .title-input::placeholder {
-        font-size: 25px; 
+        font-size: 25px; /* Adjust the font size */
     }
-}
-@media screen and (max-width: 800px){
+    
     .description-input {
-        height: 50px;
-        font-size: 15px;
-        border-bottom: none;
+        font-size: 16px;
+        height: 0px;
     }
     .description-input::placeholder {
-        font-size: 15px;
-        color: #d6d6d6;
+        font-size: 16px;
+    }
+    
+    .date-input {
+        width: 120px;
+        font-size: 12px;
+    }
+    
+    .option-buttons {
+        width: 150px;
+    }
+    
+    /* The 3 options button */
+    .view-icon {
+        width: 23px;
+    }
+    .edit-icon {
+        width: 23px;
+    }
+    .delete-icon {
+        width: 19.5px;
     }
 }
-
-@media screen and (max-width: 800px){
-    .option-buttons a img{
-
-    }
-} */
 
 
 

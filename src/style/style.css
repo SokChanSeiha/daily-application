@@ -1,8 +1,11 @@
 :root {
     /* color styling */
     --main-theme: #2C3349;
-    --main-sub: #636E91;
+    --main-sub: #8290be;
+    --white-space: #d6d6d6;
     --footer-theme: white;
     --standard-width: 1440px;
     --full-height: 100%;
+    --default-radius: 10px;
+    --perfect-radius: 25px;
 }
