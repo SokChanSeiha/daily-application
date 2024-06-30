@@ -1,10 +1,13 @@
-const createHeader = () => {
+const createHeader = (path) => {
+    if (!path) {
+        path = '.'
+    }
     return`
     <header class="header header-size">
     <article>
         Dairy Application
     </article>
-    <img src="./icon/hamburger.svg" class="icon-burger" alt="hamburger menu bar">
+        <img src="${path}/icon/hamburger.svg" class="icon-burger" alt="hamburger menu bar">
     </header>
     `
 }
@@ -15,7 +18,8 @@ class HeaderSection extends HTMLElement {
     }
 
     connectedCallback() {
-        this.innerHTML = createHeader();
+        const path = this.getAttribute('path');
+        this.innerHTML = createHeader(path);
     }
 }
 
