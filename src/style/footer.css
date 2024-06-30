@@ -2,6 +2,7 @@
 
 /* a section to cover on whole footer */
 .footer {
+    border-top:  7px solid;
     display: flex;
     justify-content:space-between;
     flex-direction: row;
