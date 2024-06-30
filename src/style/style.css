@@ -4,8 +4,10 @@
     --main-sub: #8290be;
     --white-space: #d6d6d6;
     --footer-theme: white;
-    --standard-width: 1440px;
+
+    /* length and size properties */
     --full-height: 100%;
+    --standard-width: 1440px;
     --default-radius: 10px;
     --perfect-radius: 25px;
 }

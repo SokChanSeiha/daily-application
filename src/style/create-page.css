@@ -17,7 +17,7 @@
 .body {    
     margin: auto;
     background-color: var(--main-theme);
-    height: 1200px;
+    min-height: 1040px;
     height: var(--full-height);
 }
 
