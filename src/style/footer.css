@@ -11,12 +11,12 @@
 
 /* set width and height for footer */
 .footer-width {
-    max-width: 1470px;
+    max-width: var(--standard-width);
     display: flex;
     justify-content:space-between;
     align-items: center;
     margin: auto;
-    height: 400px;
+    max-height: 400px;
 }
 
 /* area of footer where styles title */
@@ -101,3 +101,94 @@
     display: flex;
 }
 
+@media screen and (max-width: 1270px) {
+    .footer-width {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: auto;
+        max-height: 800px;
+    }
+
+    .footer-info {
+        font-weight: 20;
+        max-width: 610px;
+        max-height: 250px;
+        padding: 0px 10px;
+        font-size: 18px;
+    }
+
+    .title {
+        margin: 30px auto 25px 0px;
+        font-size: 60px;
+        letter-spacing: 4px;
+    }
+
+    .picture {
+        padding: 15px;
+        width: 500px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px 10px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    .footer-width {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: auto;
+        max-height: 800px;
+    }
+
+    .footer-info {
+        max-width: 610px;
+        max-height: 250px;
+        padding: 0px 10px;
+        font-size: 15px;
+    }
+
+    .title {
+        margin: 30px auto 25px 0px;
+        font-size: 40px;
+        letter-spacing: 4px;
+    }
+
+    .picture {
+        padding: 15px;
+        max-width: 430px;
+        margin: auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 30px;
+    }
+    
+    .image-box {
+        border-radius: 25px 0px 25px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 130px;
+        height: 130px;
+        box-shadow: 10px 10px 2px lightgray;
+        gap: 15px;
+        border: 7px solid var(--main-sub);
+    }
+    .image-gmail{
+        padding-top: 30px;
+        width: 80px;
+        transition: transform 0.7s, filter 0.7s;
+    }
+    .image-astronut {
+        width: 130px;
+    }
+    .image-gmail-text {
+        padding-bottom: 5px;
+        font-size: 9px;
+        letter-spacing: 1px;
+    }
+}
