@@ -6,11 +6,12 @@
     justify-content: center;
     max-width: 100%;
     height: auto;
-    background-color: black;      
+    background-color: black;
+    margin: auto;      
 }
 /* the dinosoaur image is auto responsive due to width set as % */
 .dinosour-image {
-    min-width: 40%;
+    width: 80%;
     padding: 0px 25px;
 }
 
