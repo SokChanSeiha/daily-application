@@ -86,3 +86,12 @@
     font-size: 20px;
     color: #d6d6d6;
 }
+
+.save-button {
+    display: flex;
+    justify-content: center;
+    border: none;
+    border-radius: 100%;
+    width: 65px;
+    height: 65px;
+}
