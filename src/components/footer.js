@@ -1,9 +1,12 @@
-const createFooter = () => {
+const createFooter = (path) => {
+    if (!path) {
+        path = '.'
+    }
     return `
         <footer class="footer">
             <div class="footer-width">
                 <article class="footer-info">
-                    <a class="title">More Details :</a>
+                    <h2 class="title">More Details :</h2>
                     <p>
                         A Dairy Web application project made with creative and dedication which offers an innovative and
                         comprehensive platform for users to manage their daily tasks, schedules, and activities.
@@ -11,11 +14,11 @@ const createFooter = () => {
                 </article>
                 <div class="picture">
                     <div class="image-box gmail">
-                        <img src="./icon/gmail.svg" class="image-gmail" alt="gmail image">
+                        <img src="${path}/icon/gmail.svg" class="image-gmail" alt="gmail image">
                         <p class="image-gmail-text">sokchanseiha@gmail.com</p>
                     </div>
                     <div class="image-box">
-                        <img src="./icon/astronut.svg" class="image-astronut" alt="astronut image">
+                        <img src="${path}/icon/astronut.svg" class="image-astronut" alt="astronut image">
                     </div>
                 </div>
             </div> 
@@ -28,7 +31,8 @@ class FooterSection extends HTMLElement {
     }
 
     connectedCallback() {
-        this.innerHTML = createFooter();
+        const path = this.getAttribute('path');
+        this.innerHTML = createFooter(path);
     }
 }
 

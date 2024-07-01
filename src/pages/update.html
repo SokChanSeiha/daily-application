@@ -4,15 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Update Page</title>
-    <link rel="stylesheet" href="../style/header.css" />
+    <link rel="stylesheet" href="../style/update.css" />
     <link rel="stylesheet" href="../style/footer.css" />
     <link rel="stylesheet" href="../style/header.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
 </head>
-<body style="background-color: red;">
+<body class="screen-color">
+    <!-- "header section" exported from component-->
     <header-section path=".."></header-section>
+
+    <!-- main body content -->
+    <main class="whole-content">
+        <section class="content-area" id="form">
+            <form class="customization" >
+                <div class="left-option">
+                    <a href="../create.html"><img class="arrow" src="../icon/arrow leave.svg" alt=""></a>
+                    <input class="title-input" placeholder="Untitled ..." type="text">
+                </div>
+                <button>
+                    <img class="save" src="../icon/save.svg" alt="">
+                </button>
+            </form>
+            <textarea class="description-input" placeholder="write a message here ..." id=""></textarea>
+            <input class="date-input" type="date">
+        </section>
+    </main>
+
+    <!-- "footer section" exported from component-->
+    <footer-section path=".."></footer-section>
 </body>
 
 <script type="module" src="../components/header.js"></script>
 <script type="module" src="../components/footer.js"></script>
+<script type="module" src="../script.js"></script>
 </html>

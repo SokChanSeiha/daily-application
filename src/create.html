@@ -17,15 +17,16 @@
     <main class="body">
         <!-- hero section -->
         <section class="hero">
-            <a href="">
-                <img src="./icon/imagedino.svg" class="dinosour-image" alt="dinosour image">
-            </a>
+            <img src="./icon/imagedino.svg" class="dinosour-image" alt="dinosour image">
         </section>
 
         <!-- entry lists -->
         <section class="content">
             <div class="create-button" name="create button">
-                <img class="create-image" src="./icon/create-btn.svg" alt="create button">
+                <a href="./pages/update.html">
+                    <img class="create-image" src="./icon/create-btn.svg" alt="create button">
+                </a>
+
             </div>
             <div class="category">
                 <span class="category-box">All</span>
@@ -39,13 +40,13 @@
                     <div class="data-collectors">
                         <input class="date-input" type="date">
                         <div class="option-buttons">
-                            <a href="">
+                            <a href="./pages/read.html">
                                 <img class="view-icon" src="./icon/view.svg" alt="icon for reading">
                             </a>
-                            <a href="">
+                            <a href="./pages/update.html">
                                 <img class="edit-icon" src="./icon/update.svg" alt="icon for reading">
                             </a>
-                            <a href="">
+                            <a href="./pages/delete.html">
                                 <img class="delete-icon" src="./icon/delete.svg" alt="icon for reading">
                             </a>
                         </div>
@@ -53,17 +54,17 @@
                 </form>
                 <form class="entry-card">
                     <input class="title-input" type="text"  placeholder="Untitled">
-                    <textarea class="description-input" placeholder="Enter a message ..."></textarea>
+                    <textarea class="description-input" placeholder="Enter a message ..." rows="1" required></textarea>
                     <div class="data-collectors">
                         <input class="date-input" type="date">
                         <div class="option-buttons">
-                            <a href="">
+                            <a href="./pages/read.html">
                                 <img class="view-icon" src="./icon/view.svg" alt="icon for reading">
                             </a>
-                            <a href="">
+                            <a href="./pages/update.html">
                                 <img class="edit-icon" src="./icon/update.svg" alt="icon for reading">
                             </a>
-                            <a href="">
+                            <a href="./pages/delete.html">
                                 <img class="delete-icon" src="./icon/delete.svg" alt="icon for reading">
                             </a>
                         </div>
@@ -71,17 +72,17 @@
                 </form>
                 <form class="entry-card">
                     <input class="title-input" type="text"  placeholder="Untitled">
-                    <textarea class="description-input" placeholder="Enter a message ..."></textarea>
+                    <textarea class="description-input" placeholder="Enter a message ..." rows="1" required></textarea>
                     <div class="data-collectors">
                         <input class="date-input" type="date">
                         <div class="option-buttons">
-                            <a href="">
+                            <a href="./pages/read.html">
                                 <img class="view-icon" src="./icon/view.svg" alt="icon for reading">
                             </a>
-                            <a href="">
+                            <a href="./pages/update.html">
                                 <img class="edit-icon" src="./icon/update.svg" alt="icon for reading">
                             </a>
-                            <a href="">
+                            <a href="./pages/delete.html">
                                 <img class="delete-icon" src="./icon/delete.svg" alt="icon for reading">
                             </a>
                         </div>
@@ -97,4 +98,5 @@
 
 <script type="module" src="./components/header.js"></script>
 <script type="module" src="./components/footer.js"></script>
+<script type="module" src="./script.js"></script>
 </html>

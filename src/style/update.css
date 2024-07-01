@@ -1,1 +1,88 @@
 @import url("style.css");
+
+.screen-color {
+    background-color: var(--main-theme);
+}
+
+.whole-content {
+    max-width: var(--standard-width);
+    margin: auto;
+    padding: 30px 25px;
+}
+
+.content-area {
+    padding: 10px 25px;
+    background-color: white;
+    min-height: 800px;
+    border-radius: var(--perfect-radius);
+    position: relative;
+}
+
+.customization {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-option {
+    display: flex;
+    gap: 15px;
+}
+
+.arrow {
+    width: 60px;
+}
+
+.save {
+    width: 60px;
+}
+
+.date-input {
+    border: none;
+    outline: none; /* This removes the focus border */
+    background-color: #8290be;
+    padding: 3px 5px;
+    width: 120px;
+    border-radius: var(--default-radius);
+    font-size: 15px;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 20px 35px;
+}
+
+.title-input {
+    font-weight:bold ;
+    font-size: 40px;
+    height: 50px;
+    min-width: 100px;
+    border: none;
+    outline: none; /* This removes the focus border */
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.title-input::placeholder {
+    font-size: 40px; /* Adjust the font size */
+    color: #d6d6d6;
+}
+
+.description-input {
+    margin: 5px 0px;
+    padding: 20px 5px;
+    font-size: 20px;
+    min-height: 620px;
+    width: 100%;
+    border: none;
+    border-bottom: 10px solid white;
+    outline: none; /* This removes the focus border */
+    background-color: white;
+    overflow-wrap: break-word;
+    overflow:visible;
+}
+
+.description-input::placeholder {
+    font-size: 20px;
+    color: #d6d6d6;
+}
