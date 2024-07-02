@@ -15,7 +15,7 @@ const createFooter = (path) => {
                 <div class="picture">
                     <div class="image-box gmail">
                         <img src="${path}/icon/gmail.svg" class="image-gmail" alt="gmail image">
-                        <p class="image-gmail-text">sokchanseiha@gmail.com</p>
+                        <h3 class="image-gmail-text">sokchanseiha@gmail.com</h3>
                     </div>
                     <div class="image-box">
                         <img src="${path}/icon/astronut.svg" class="image-astronut" alt="astronut image">

@@ -25,7 +25,7 @@
     <!-- entry lists -->
     <section class="content">
       <!-- card render from local storage -->
-      <div id="notes-container"></div>
+
       <!-- create page go to-->
       <div class="create-button" name="create button">
         <a href="./pages/create.html">
@@ -38,36 +38,86 @@
         <span class="category-box">Favorites</span>
         <span class="category-box">Recents</span>
       </div>
-      <div class="entries-content">
-        <card-html-component></card-html-component>
-        <div id="entries-title-1" class="entries-container">
-          <!-- Cards will be inserted here -->
-          <card-html-component></card-html-component>
-        </div>
 
-        <form class="entry-card">
-          <input class="title-input" id="entries-title" type="text" placeholder="Untitled" />
-          <textarea class="description-input" id="entries-message" placeholder="Enter a message ..." rows="1"
-            required></textarea>
-          <div class="data-collectors">
-            <input class="date-input" type="date" />
-            <div class="option-buttons">
-              <a href="./pages/read.html">
-                <img class="view-icon" src="./icon/view.svg" alt="icon for reading" />
-              </a>
-              <a href="./pages/update.html">
-                <img class="edit-icon" src="./icon/update.svg" alt="icon for reading" />
-              </a>
-              <a href="./pages/delete.html">
-                <img class="delete-icon" src="./icon/delete.svg" alt="icon for reading" />
-              </a>
+      <div class="">
+
+        <div id="notes-container"></div>
+
+        <div class="Note" data-id="${id}">
+          <div class="Note-header">
+            <h2 class="Note-title">${title}</h2>
+            <!-- <h2 class="Note-title">New date</h2> -->
+          </div>
+          <div class="Note-body">
+            <p class="Note-description">${description}</p>
+            <!-- <p class="Note-description">Wowowwwwww</p> -->
+          </div>
+          <div class="option">
+            <span class="Note-date">${date}</span>
+            <!-- <span class="Note-date">2024-06-02</span> -->
+            <div class="Note-footer">
+              <button class="button read" onclick="window.location.href='./pages/read.html?id=${id}'">
+                <img class="read" src="./icon/view.svg" alt="Read icon" /></button>        
+              <button class="button edit" onclick="window.location.href='./pages/update.html?id=${id}'">
+                <img class="edit" src="./icon/update.svg" alt="Update icon" /></button>
+              <button class="button delete" onclick="window.location.href='./pages/delete.html?id=${id}'">
+                <img class="delete" src="./icon/delete.svg" alt="Delete icon" />
+              </button> 
             </div>
           </div>
-        </form>
+        </div>
+
+        <div class="Note" data-id="${id}">
+          <div class="Note-header">
+            <h2 class="Note-title">${title}</h2>
+            <!-- <h2 class="Note-title">New date</h2> -->
+          </div>
+          <div class="Note-body">
+            <p class="Note-description">${description}</p>
+            <!-- <p class="Note-description">Wowowwwwww</p> -->
+          </div>
+          <div class="option">
+            <span class="Note-date">${date}</span>
+            <!-- <span class="Note-date">2024-06-02</span> -->
+            <div class="Note-footer">
+              <button class="button read" onclick="window.location.href='./pages/read.html?id=${id}'">
+                <img class="read" src="./icon/view.svg" alt="Read icon" /></button>        
+              <button class="button edit" onclick="window.location.href='./pages/update.html?id=${id}'">
+                <img class="edit" src="./icon/update.svg" alt="Update icon" /></button>
+              <button class="button delete" onclick="window.location.href='./pages/delete.html?id=${id}'">
+                <img class="delete" src="./icon/delete.svg" alt="Delete icon" />
+              </button> 
+            </div>
+          </div>
+        </div>
+
+        <div class="Note" data-id="${id}">
+          <div class="Note-header">
+            <h2 class="Note-title">${title}</h2>
+            <!-- <h2 class="Note-title">New date</h2> -->
+          </div>
+          <div class="Note-body">
+            <p class="Note-description">${description}</p>
+            <!-- <p class="Note-description">Wowowwwwww</p> -->
+          </div>
+          <div class="option">
+            <span class="Note-date">${date}</span>
+            <!-- <span class="Note-date">2024-06-02</span> -->
+            <div class="Note-footer">
+              <button class="button read" onclick="window.location.href='./pages/read.html?id=${id}'">
+                <img class="read" src="./icon/view.svg" alt="Read icon" /></button>        
+              <button class="button edit" onclick="window.location.href='./pages/update.html?id=${id}'">
+                <img class="edit" src="./icon/update.svg" alt="Update icon" /></button>
+              <button class="button delete" onclick="window.location.href='./pages/delete.html?id=${id}'">
+                <img class="delete" src="./icon/delete.svg" alt="Delete icon" />
+              </button> 
+            </div>
+          </div>
+        </div>
 
       </div>
+
     </section>
-    <card-html-component></card-html-component>
 
   </main>
 
