@@ -4,22 +4,41 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Delete Note</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../style/style.css" />
   </head>
-  <body>
-    <div id="delete-confirmation">
-      <input type="text" id="title-delete" placeholder="Title" required />
-      <textarea
-        id="message-delete"
-        placeholder="Description"
-        required
-      ></textarea>
-      <input type="date" id="date-delete" required />
-      <p>Are you sure you want to delete this note?</p>
-      <button id="confirm-delete">Yes</button>
-      <img src="../icon/arrow leave.svg" id="arrow-return">
-      <button onclick="window.location.href='../index.html'">No</button>
+  <body class="body">
+    <header-section path=".."></header-section>
+
+    <div class="whole-content">
+
+      <div class="content-area" id="delete-confirmation">
+        <div class="upper-area">
+          <div class="leave-arrow">
+            <img src="../icon/arrow leave.svg" id="arrow-return">
+            <input type="text" id="title-delete" placeholder="Title" required />
+          </div>
+
+          <button id="confirm-delete">
+            <img src="../icon/delete.svg" alt="">
+          </button>
+        </div>
+        <textarea
+          id="message-delete"
+          placeholder="Description"
+          required
+        ></textarea>
+        <input type="date" id="date-delete" required />
+        
+  
+  
+        <!-- <button onclick="window.location.href='../index.html'">No</button> -->
+      </div>
     </div>
-    <script src="../components/delete.js"></script>
+
+    <footer-section path=".."></footer-section>
   </body>
+
+  <script src="../components/delete.js"></script>
+  <script src="../components/header.js"></script>
+  <script src="../components/footer.js"></script>
 </html>

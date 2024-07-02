@@ -4,10 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Create Note</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../style/style.css" />
   </head>
-  <body>
-    <form id="create-form">
+  <body class="body">
+    <header-section path=".."></header-section>
+
+    <form class="whole-content" id="create-form">
       <img src="../icon/arrow leave.svg" id="arrow-return">
       <input type="text" id="title-create" placeholder="Title" required />
       <textarea
@@ -18,6 +20,11 @@
       <input type="date" id="date-create" required />
       <button type="submit" id="save-button">Save</button>
     </form>
-    <script src="../components/create.js"></script>
+
+    <footer-section path=".."></footer-section>
   </body>
+
+  <script src="../components/create.js"></script>
+  <script src="../components/header.js"></script>
+  <script src="../components/footer.js"></script>
 </html>

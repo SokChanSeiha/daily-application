@@ -20,7 +20,6 @@
 .body {    
     margin: auto;
     background-color: var(--main-theme);
-    min-height: 1040px;
     height: var(--full-height);
 }
 

@@ -4,20 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Update Note</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="../style/style.css" />
   </head>
-  <body>
-    <form id="update-form">
-      <img src="../icon/arrow leave.svg" id="arrow-return">
-      <input type="text" id="title-update" placeholder="Title" required />
-      <textarea
-        id="message-update"
-        placeholder="Description"
-        required
-      ></textarea>
-      <input type="date" id="date-update" required />
-      <button type="submit" id="update-button">Update</button>
-    </form>
-    <script src="../components/update.js"></script>
+  <body class="body">
+    <header-section path=".."></header-section>
+
+    <div class="whole-content">
+      <form class="content-area" id="update-form">
+        <div class="upper-area">
+          <div class="left-arrow">
+            <img src="../icon/arrow leave.svg" id="arrow-return">
+            <input type="text" id="title-update" placeholder="Title" required />
+          </div>
+          <button type="submit" id="update-button">Update</button>
+        </div>
+        <textarea
+          id="message-update"
+          placeholder="Description"
+          required
+        ></textarea>
+        <input type="date" id="date-update" required />
+      </form>
+
+    </div>
+
+    <footer-section path=".."></footer-section>
   </body>
+
+  <script src="../components/update.js"></script>
+  <script src="../components/header.js"></script>
+  <script src="../components/footer.js"></script>
 </html>

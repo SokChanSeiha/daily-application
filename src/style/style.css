@@ -1,3 +1,9 @@
+@import url("footer.css");
+@import url("header.css");
+@import url("create-page.css");
+@import url("update.css");
+
+
 :root {
     /* color styling */
     --main-theme: #2C3349;
@@ -13,5 +19,24 @@
     --standard-width: 1440px;
     --default-radius: 10px;
     --perfect-radius: 25px;
+}
+
+.body {    
+    margin: auto;
+    background-color: var(--main-theme);
+    min-height: 1040px;
+    height: var(--full-height);
+}
+
+.upper-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.left-arrow {
+    display: flex;
+    align-items: center;
 }
 
