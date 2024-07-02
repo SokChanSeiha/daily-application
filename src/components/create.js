@@ -1,3 +1,7 @@
+document.getElementById("arrow-return").addEventListener("click", () => {
+  window.location.href = "../index.html";
+});
+
 document.getElementById("create-form").addEventListener("submit", (event) => {
   event.preventDefault();
 
@@ -8,8 +12,9 @@ document.getElementById("create-form").addEventListener("submit", (event) => {
 
   const notes = JSON.parse(localStorage.getItem("notes")) || [];
   const newNote = { id, title, description, date };
-  notes.push(newNote);
-  localStorage.setItem("notes", JSON.stringify(notes));
+  const updateNotes = [...notes, newNote];
+  // notes.push(newNote);
+  localStorage.setItem("notes", JSON.stringify(updateNotes));
 
   window.location.href = "../index.html";
 });

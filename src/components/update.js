@@ -12,6 +12,7 @@ window.addEventListener("load", () => {
   }
 });
 
+// function to update the note
 document.getElementById("update-form").addEventListener("submit", (event) => {
   event.preventDefault();
 
@@ -19,11 +20,16 @@ document.getElementById("update-form").addEventListener("submit", (event) => {
   const description = document.getElementById("message-update").value;
   const date = document.getElementById("date-update").value;
 
+  // 
   let notes = JSON.parse(localStorage.getItem("notes")) || [];
   notes = notes.map((note) =>
     note.id === noteId ? { ...note, title, description, date } : note
   );
   localStorage.setItem("notes", JSON.stringify(notes));
 
+  window.location.href = "../index.html";
+});
+
+document.getElementById("arrow-return").addEventListener("click", () => {
   window.location.href = "../index.html";
 });
