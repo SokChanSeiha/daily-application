@@ -9,17 +9,27 @@
   <body class="body">
     <header-section path=".."></header-section>
 
-    <form class="whole-content" id="create-form">
-      <img src="../icon/arrow leave.svg" id="arrow-return">
-      <input type="text" id="title-create" placeholder="Title" required />
-      <textarea
-        id="message-create"
-        placeholder="Description"
-        required
-      ></textarea>
-      <input type="date" id="date-create" required />
-      <button type="submit" id="save-button">Save</button>
-    </form>
+    <div class="whole-content">
+      <form class="content-area" id="create-form">
+        <div class="upper-area">
+          <div class="left-arrow">
+            <img class="arrow" src="../icon/arrow leave.svg" id="arrow-return">
+            <input class="title-input" type="text" id="title-create" placeholder="Title . . ." required />
+          </div>
+          <button class="save" type="submit" id="save-button">
+            <img class="save-button" src="../icon/save.svg" alt="">
+          </button>
+        </div>
+
+        <textarea class="description-input"
+          id="message-create"
+          placeholder="Description . . ."
+          required
+        ></textarea>
+        <input class="date-input" type="date" id="date-create" required />
+
+      </form>
+    </div>
 
     <footer-section path=".."></footer-section>
   </body>

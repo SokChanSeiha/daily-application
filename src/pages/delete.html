@@ -13,21 +13,24 @@
 
       <div class="content-area" id="delete-confirmation">
         <div class="upper-area">
-          <div class="leave-arrow">
-            <img src="../icon/arrow leave.svg" id="arrow-return">
-            <input type="text" id="title-delete" placeholder="Title" required />
+          <div class="left-arrow">
+            <img class="arrow" src="../icon/arrow leave.svg" id="arrow-return">
+            <input class="title-input" type="text" id="title-delete" placeholder="Title" required />
           </div>
 
-          <button id="confirm-delete">
+          <button class="delete-button" id="confirm-delete">
             <img src="../icon/delete.svg" alt="">
           </button>
         </div>
         <textarea
+          class="description-input"
           id="message-delete"
           placeholder="Description"
           required
         ></textarea>
-        <input type="date" id="date-delete" required />
+
+        <input class="date-input" type="date" id="date-update" required />
+
         
   
   
