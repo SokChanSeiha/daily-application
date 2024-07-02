@@ -7,7 +7,7 @@
 .whole-content {
     max-width: var(--standard-width);
     margin: auto;
-    padding: 30px 25px;
+    padding: 25px 25px;
 }
 
 .content-area {
@@ -26,6 +26,7 @@
 
 .left-option {
     display: flex;
+    align-items: center;
     gap: 15px;
 }
 
@@ -42,7 +43,7 @@
     outline: none; /* This removes the focus border */
     background-color: #8290be;
     padding: 3px 5px;
-    width: 120px;
+    width: 100px;
     border-radius: var(--default-radius);
     font-size: 15px;
     color: white;
@@ -56,7 +57,7 @@
     font-weight:bold ;
     font-size: 40px;
     height: 50px;
-    min-width: 100px;
+    width: 800px;
     border: none;
     outline: none; /* This removes the focus border */
     text-overflow: ellipsis;
@@ -94,4 +95,65 @@
     border-radius: 100%;
     width: 65px;
     height: 65px;
+    align-items: center;
+}
+
+#msg {
+    color: red;
+}
+
+@media screen and (max-width:1080px) {
+    .title-input {
+        max-width: 500px;
+        font-size: 35px;
+    }
+    .title-input::placeholder {
+        font-size: 30px; /* Adjust the font size */
+    }
+    .description-input::placeholder {
+        font-size: 15px;
+    }
+    .arrow {
+        width: 50px;
+    }
+    .save {
+        width: 50px;
+    }
+    .save-button {
+        display: flex;
+        justify-content: center;
+        border: none;
+        border-radius: 100%;
+        width: 50px;
+        height: 50px;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .title-input {
+        max-width: 200px;
+        font-size: 30px;
+    }
+    .title-input::placeholder {
+        font-size: 25px; /* Adjust the font size */
+    }
+    .description-input::placeholder {
+        font-size: 15px;
+    }
+    .arrow {
+        width: 40px;
+    }
+    .save {
+        width: 40px;
+    }
+    .save-button {
+        display: flex;
+        justify-content: center;
+        border: none;
+        border-radius: 100%;
+        width: 45px;
+        height: 45px;
+        align-items: center;
+    }
 }

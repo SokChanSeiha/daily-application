@@ -6,7 +6,7 @@
     justify-content: center;
     max-width: 100%;
     height: auto;
-    background-color: black;
+    background-color: #000000;
     margin: auto;      
 }
 /* the dinosoaur image is auto responsive due to width set as % */
@@ -34,7 +34,7 @@
 
 /* black background for hero section */
 .screen-color {
-    background-color: black;
+    background-color: #000000;
 }
 
 /* a section which covers main contents 
@@ -48,19 +48,19 @@ including: category, entries list, create button */
 
 /* a div for category area's properties */
 .category {
-    font-weight: 600;
+    font-weight: 600px;
     max-width: 500px;
     padding: 15px 25px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: 30px;
-    color: black;
+    color: #000000;
 }
 
 /* adjusting color and box size for category */
 .category-box {
-    background-color: white;
+    background-color: #ffffff;
     padding: 3px 22px;
     border-radius: var(--perfect-radius);
     cursor: pointer;
@@ -87,7 +87,7 @@ including: category, entries list, create button */
     max-width: 620px;
     min-width: 200px;
     max-height: 600px;     /* 150px */
-    background-color: white;
+    background-color: #ffffff;
     border-radius: var(--perfect-radius);
     border:  10px solid var(--main-sub);
 
@@ -118,9 +118,9 @@ including: category, entries list, create button */
     height: 100px;
     max-width: 600px;
     border: none;
-    border-bottom: 10px solid white;
+    border-bottom: 10px solid #ffffff;
     outline: none; /* This removes the focus border */
-    background-color: white;
+    background-color: #ffffff;
     overflow-wrap: break-word;
     overflow:visible;
 }
@@ -144,7 +144,7 @@ including: category, entries list, create button */
 .date-input {
     border: none;
     outline: none; /* This removes the focus border */
-    background-color: #8290be;
+    background-color: var(--main-sub);
     padding: 3px 5px;
     width: 120px;
     border-radius: var(--default-radius);
@@ -176,7 +176,7 @@ including: category, entries list, create button */
 }
 .delete-icon {
     width: 21px;
-    background-color: red;
+    background-color: #ff0000;
     padding: 5px;
     border-radius: var(--default-radius);
 }
@@ -195,7 +195,7 @@ including: category, entries list, create button */
     }
 
     .category {
-        font-weight: 600;
+        font-weight: 600px;
         max-width: 400px;
         font-size: 25px;
     }
@@ -292,12 +292,6 @@ including: category, entries list, create button */
     .entry-card {
         max-height: 120px;
         border: 5px solid var(--main-sub);
-
-        /* margin: 5px 0px;
-        padding: 15px;
-        max-height: 250px;
-        border-radius: var(--perfect-radius);
-        border:  8px solid var(--main-sub); */
     }
     
     .title-input {

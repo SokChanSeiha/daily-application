@@ -3,7 +3,10 @@
     --main-theme: #2C3349;
     --main-sub: #8290be;
     --white-space: #d6d6d6;
-    --footer-theme: white;
+    --footer-theme: #ffffff;
+    --red-delete: #ff0000;
+    --yellow-edit: #FFF000;
+    --blue-read: #049cd8;
 
     /* length and size properties */
     --full-height: 100%;
@@ -11,3 +14,4 @@
     --default-radius: 10px;
     --perfect-radius: 25px;
 }
+

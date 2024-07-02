@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create Page</title>
+  <link rel="stylesheet" href="./style/create-page.css" />
+  <link rel="stylesheet" href="./style/footer.css" />
+  <link rel="stylesheet" href="./style/header.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet" />
+</head>
+
+<body class="screen-color">
+  <!-- "header section" exported from component-->
+  <header-section></header-section>
+
+  <!-- main body content -->
+  <main class="body">
+    <!-- hero section -->
+    <section class="hero">
+      <img src="./icon/imagedino.svg" class="dinosour-image" alt="dinosour image" />
+    </section>
+
+    <!-- entry lists -->
+    <section class="content">
+
+      <!-- create page go to-->
+      <div class="create-button" name="create button">
+        <a href="./pages/create.html">
+          <img class="create-image" src="./icon/create-btn.svg" alt="create button" />
+        </a>
+      </div>
+
+      <div class="category">
+        <span class="category-box">All</span>
+        <span class="category-box">Favorites</span>
+        <span class="category-box">Recents</span>
+      </div>
+      <div class="entries-content">
+        <card-html-component></card-html-component>
+        <div id="entries-title-1" class="entries-container">
+          <!-- Cards will be inserted here -->
+          <card-html-component></card-html-component>
+        </div>
+
+        <form class="entry-card">
+          <input class="title-input" id="entries-title" type="text" placeholder="Untitled" />
+          <textarea class="description-input" id="entries-message" placeholder="Enter a message ..." rows="1"
+            required></textarea>
+          <div class="data-collectors">
+            <input class="date-input" type="date" />
+            <div class="option-buttons">
+              <a href="./pages/read.html">
+                <img class="view-icon" src="./icon/view.svg" alt="icon for reading" />
+              </a>
+              <a href="./pages/update.html">
+                <img class="edit-icon" src="./icon/update.svg" alt="icon for reading" />
+              </a>
+              <a href="./pages/delete.html">
+                <img class="delete-icon" src="./icon/delete.svg" alt="icon for reading" />
+              </a>
+            </div>
+          </div>
+        </form>
+
+      </div>
+    </section>
+    <card-html-component></card-html-component>
+
+  </main>
+
+  <!-- "footer section" exported from component-->
+  <footer-section></footer-section>
+</body>
+
+<script type="module" src="./components/header.js"></script>
+<script type="module" src="./components/footer.js"></script>
+<script type="module" src="script.js"></script>
+
+</html>
