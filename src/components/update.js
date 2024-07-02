@@ -25,5 +25,5 @@ document.getElementById("update-form").addEventListener("submit", (event) => {
   );
   localStorage.setItem("notes", JSON.stringify(notes));
 
-  window.location.href = "index.html";
+  window.location.href = "../index.html";
 });

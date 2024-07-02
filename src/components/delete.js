@@ -6,5 +6,5 @@ document.getElementById("confirm-delete").addEventListener("click", () => {
   notes = notes.filter((note) => note.id !== noteId);
   localStorage.setItem("notes", JSON.stringify(notes));
 
-  window.location.href = "index.html";
+  window.location.href = "../index.html";
 });

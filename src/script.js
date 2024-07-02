@@ -10,9 +10,9 @@ const createNoteHTML = (id, title, description, date) => {
           <p class="Note-description">${description}</p>
         </div>
         <div class="Note-footer">
-          <button onclick="window.location.href='update.html?id=${id}'">
+          <button onclick="window.location.href='./pages/update.html?id=${id}'">
             <img src="../icon/update.svg" alt="Update icon" /></button>
-          <button onclick="window.location.href='delete.html?id=${id}'">
+          <button onclick="window.location.href='./pages/delete.html?id=${id}'">
             <img src="../icon/delete.svg" alt="Delete icon" />
           </button>
         </div>

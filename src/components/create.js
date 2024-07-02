@@ -11,5 +11,5 @@ document.getElementById("create-form").addEventListener("submit", (event) => {
   notes.push(newNote);
   localStorage.setItem("notes", JSON.stringify(notes));
 
-  window.location.href = "index.html";
+  window.location.href = "../index.html";
 });
