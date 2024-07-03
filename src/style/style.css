@@ -71,9 +71,6 @@
 }
 
 
-
-
-
 .whole-content {
     max-width: var(--standard-width);
     margin: auto;
@@ -108,7 +105,7 @@
     outline: none; /* This removes the focus border */
     background-color: #8290be;
     padding: 3px 5px;
-    width: 100px;
+    width: 120px;
     border-radius: var(--default-radius);
     font-size: 15px;
     color: white;

@@ -101,14 +101,13 @@
 
 @media screen and (max-width: 1270px) {
     .footer-width {
-        display: flex;
+        /* turn the images to the below */
         flex-direction: column;
         justify-content: space-between;
-        margin: auto;
-        max-height: 800px;
     }
 
     .footer-info {
+        /* restyling on footer information */
         font-weight: 20;
         max-width: 500px;
         max-height: 250px;
