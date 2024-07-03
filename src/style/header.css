@@ -2,7 +2,7 @@
 
 /* header */
 .header {
-    /* structure block */
+    /* positioning + setting: structure block */
     margin: auto;
     display: flex;
     justify-content: space-between;

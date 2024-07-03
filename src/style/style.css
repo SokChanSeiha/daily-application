@@ -9,7 +9,7 @@
     --main-theme: #2C3349;
     --main-sub: #8290be;
     --white-space: #d6d6d6;
-    --footer-theme: #ffffff;
+    --white-pure: #ffffff;
     --red-delete: #ff0000;
     --yellow-edit: #FFF000;
     --blue-read: #049cd8;
@@ -49,7 +49,7 @@
     width: 120px;
     border-radius: var(--default-radius);
     font-size: 15px;
-    color: white;
+    color: var(--white-pure);
     position: absolute;
     bottom: 0;
     right: 0;
@@ -79,7 +79,7 @@
 
 .content-area {
     padding: 10px 25px;
-    background-color: white;
+    background-color: var(--white-pure);
     min-height: 800px;
     border-radius: var(--perfect-radius);
     position: relative;
@@ -108,7 +108,7 @@
     width: 120px;
     border-radius: var(--default-radius);
     font-size: 15px;
-    color: white;
+    color: var(--white-pure);
     position: absolute;
     bottom: 0;
     right: 0;
@@ -128,7 +128,7 @@
 
 .title-input::placeholder {
     font-size: 40px; /* Adjust the font size */
-    color: #d6d6d6;
+    color: var(--white-space);
 }
 
 .description-input {
@@ -138,16 +138,16 @@
     min-height: 620px;
     width: 100%;
     border: none;
-    border-bottom: 10px solid white;
+    border-bottom: 10px solid;
     outline: none; /* This removes the focus border */
-    background-color: white;
+    background-color: var(--white-pure);
     overflow-wrap: break-word;
     overflow:visible;
 }
 
 .description-input::placeholder {
     font-size: 20px;
-    color: #d6d6d6;
+    color: var(--white-space);
 }
 
 .save-button {

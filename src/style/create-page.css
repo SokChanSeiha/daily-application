@@ -84,7 +84,7 @@ including: category, entries list, create button */
 
 /* designing: for the whole display card */
 .Note {
-    background-color: white;
+    background-color: var(--white-pure);
     width: auto;
     padding: 5px;
     border:  10px solid #8290be;
@@ -136,7 +136,7 @@ including: category, entries list, create button */
     align-items: center;
     padding: 0px 10px;
     height: 23px;
-    color: white;
+    color: var(--white-pure);
     background-color: #8290BE;
     border-radius: 25px;
     font-weight:lighter;

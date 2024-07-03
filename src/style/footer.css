@@ -7,7 +7,7 @@
     justify-content:space-between;
     flex-direction: row;
     margin: auto;
-    background-color: white;
+    background-color: var(--white-pure);
 }
 
 /* set width and height for footer */
@@ -89,7 +89,7 @@
 /* text on image gmail */
 .image-gmail-text {
     padding-bottom: 10px;
-    color: white;
+    color: var(--white-pure);
     font-size: 15px;
     font-weight: 50;
 }
@@ -99,15 +99,16 @@
     display: flex;
 }
 
+/* Responsive design for tablet devices "footer responsiveness as tablet is 1270px break point" */
 @media screen and (max-width: 1270px) {
+    /* turn the images to the below */
     .footer-width {
-        /* turn the images to the below */
         flex-direction: column;
         justify-content: space-between;
     }
 
+    /* restyling on footer information */
     .footer-info {
-        /* restyling on footer information */
         font-weight: 20;
         max-width: 500px;
         max-height: 250px;
@@ -115,30 +116,25 @@
         font-size: 18px;
     }
 
+    /* restyling on footer information */
     .title {
         margin: 30px auto 25px 0px;
         font-size: 50px;
         letter-spacing: 4px;
     }
 
+    /* restyling on picture section */
     .picture {
         padding: 15px;
         width: 500px;
-        margin: auto;
-        display: flex;
         justify-content: space-between;
-        align-items: center;
         gap: 10px 10px;
     }
+
+    /* restyling on picture container box */
     .image-box {
-        border-radius: 25px 0px 25px 0px;
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-        align-items: center;
         width: 180px;
         height: 180px;
-        box-shadow: 10px 10px 2px lightgray;
         gap: 0px;
     }
     
@@ -161,62 +157,41 @@
     
     /* text on image gmail */
     .image-gmail-text {
-        color: white;
         font-size: 15px;
     }
+
+    /* size: on image astronut */
     .image-astronut {
         width: 168px;;
     }
-    
 }
 
+/* Responsive design for mobile devices */
 @media screen and (max-width: 800px){
-    .footer-width {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin: auto;
-        max-height: auto;
-    }
-
     .footer-info {
-        max-width: auto;
-        max-height: 250px;
         padding: 0px 5px;
         font-size: 15px;
     }
-
     .title {
         margin: 30px auto 0px 0px;
         font-size: 30px;
-        letter-spacing: 4px;
     }
-
     .picture {
-        padding: 15px;
         max-width: 430px;
-        margin: auto;
-        display: flex;
         justify-content: space-evenly;
-        align-items: center;
         gap: 30px;
     }
-    
     .image-box {
-        border-radius: 25px 0px 25px 0px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        border-radius: 18px 0px;
         width: 100px;
         height: 100px;
-        box-shadow: 10px 10px 2px lightgray;
+        box-shadow: 5px 5px 2px lightgray;
         gap: 5px;
-        border: 7px solid var(--main-sub);
+        border: 5px solid var(--main-sub);
     }
     .image-gmail{
         padding-top: 30px;
         width: 70px;
-        transition: transform 0.7s, filter 0.7s;
     }
     .image-astronut {
         width: 100px;
