@@ -20,6 +20,10 @@
 
 /* design: color, margin, height for the whole screen background */
 .body {    
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
     margin: auto;
     background-color: var(--main-theme);
     height: var(--full-height);
@@ -60,7 +64,7 @@ including: category, entries list, create button */
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: 30px;
+    font-size: var(--font-lg);
     color: #000000;
 }
 
@@ -93,7 +97,7 @@ including: category, entries list, create button */
 
 /* sizing: title */
 .Note-header {
-    font-size: 30px;
+    font-size: var(--font-lg);
     max-width: 280px;
 }
 
@@ -109,7 +113,7 @@ including: category, entries list, create button */
 /* setting: container for description message */
 .Note-body {
     padding: 5px 0px;
-    font-size: 20px;
+    font-size: var(--font-md);
     height: 120px;
     overflow: hidden;
 }
@@ -137,7 +141,7 @@ including: category, entries list, create button */
     padding: 0px 10px;
     height: 23px;
     color: var(--white-pure);
-    background-color: #8290BE;
+    background-color: var(--main-sub);
     border-radius: 25px;
     font-weight:lighter;
 }
@@ -160,7 +164,7 @@ including: category, entries list, create button */
 
 /* designing: style the button "read" */
 .read {
-    background-color: #32c5ff;
+    background-color: var(--blue-read);
     width: 20px;
     height: 20px;
     padding: 5px;
@@ -171,7 +175,7 @@ including: category, entries list, create button */
 
 /* designing: style the button "edit" */
 .edit {
-    background-color: #FFF000;
+    background-color: var(--yellow-edit);
     width: 20px;
     height: 20px;
     padding: 5px;
@@ -181,7 +185,7 @@ including: category, entries list, create button */
 
 /* designing: style the button "delete" */
 .delete {
-    background-color: #FF0000;
+    background-color: var(--red-delete);
     width: 20px;
     height: 21px;
     padding: 5px;
@@ -193,11 +197,10 @@ including: category, entries list, create button */
 @media (max-width: 1040px) {
 
     .Note {
-        border:  8px solid #8290be;    /* from 10px -> 8px */
+        border:  8px solid var(--main-sub);    /* from 10px -> 8px */
     }
 
     .Note-header {
-        font-size: 25px;    /* from 30px -> 25px */
         max-width: 320px;   /* from 280px -> 320px */
     }
     .Note-title {
@@ -217,20 +220,17 @@ including: category, entries list, create button */
     }
 
     .read {
-        background-color: #049CD8;
         /* from 20px -> 18px */
         width: 18px;
         height: 18px;
     }
     .edit {
-        background-color: #FFF000;
         /* from 20px -> 18px */
         width: 18px;
         height: 18px;
     }
 
     .delete {
-        background-color: #FF0000;
         /* from 20px -> 18px */
         width: 18px;
         height: 18px;
@@ -240,9 +240,6 @@ including: category, entries list, create button */
         width: 80px;    /* from 100px -> 80px */
     }
 
-    .category {
-        font-size: 25px;    /* from 30px -> 25px */
-    }
     
     .category-box {
         background-color: #fff;
@@ -263,12 +260,12 @@ including: category, entries list, create button */
     }
 
     .Note-header {
-        font-size: 20px;    /* from 25px -> 20px */
+        font-size: var(--font-md);    /* from 30px -> 20px */
     }
 
     /* message */
     .Note-body {
-        font-size: 18px;
+        font-size: var(--font-md);
         height: 115px;        /* from 100px -> 115px */
         min-height: 60px;     /* from 100px -> 60px */
     }
@@ -280,20 +277,17 @@ including: category, entries list, create button */
     }
 
     .read {
-        background-color: #049CD8;
         /* from 18px -> 16px */
         width: 16px;
         height: 16px;
     }
     .edit {
-        background-color: #FFF000;
         /* from 18px -> 16px */
         width: 16px;
         height: 16px;
     }
 
     .delete {
-        background-color: #FF0000;
         /* from 18px -> 16px */
         width: 16px;
         height: 16px;
@@ -304,7 +298,7 @@ including: category, entries list, create button */
     }
 
     .category {
-        font-size: 20px;    /* from 25px -> 20px */
+        font-size: var(--font-md);    /* from 25px -> 20px */
     }
 
     .entries-content {

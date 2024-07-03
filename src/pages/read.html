@@ -9,25 +9,34 @@
 </head>
 
 <body class="body">
-
+    <!-- "header section" exported from component-->
     <header-section path=".."></header-section>
 
+    <!-- whole main content -->
     <main class="whole-content">
         <div class="content-area" id="delete-confirmation">
+            <!-- upper area of the create form -->
             <div class="upper-area">
+                <!-- return arrow & title input-->
                 <div class="left-arrow">
                     <img class="arrow" src="../icon/arrow leave.svg" id="arrow-return">
                     <input class="title-input" type="text" id="title-read" placeholder="Title" required />
                 </div>
             </div>
+
+            <!-- input text area -->
             <textarea class="description-input" id="message-read" placeholder="Description" required></textarea>
+
+            <!-- input date area -->
             <input class="date-input" type="date" id="date-read" required />
         </div>
     </main>
 
+  <!-- "footer section" exported from component-->
     <footer-section path=".."></footer-section>
 </body>
 
+  <!-- link to the JavaScript to get intereaction with create.js and components -->
 <script src="../components/read.js"></script>
 <script src="../components/header.js"></script>
 <script src="../components/footer.js"></script>

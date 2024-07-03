@@ -1,7 +1,10 @@
+// Function to create the HTML for the header
 const createHeader = (path) => {
+        // If 'path' is not provided, set it to '.'
     if (!path) {
         path = '.'
     }
+        // Return the HTML string for the header, using the provided or default 'path'
     return`
     <header class="header header-size">
     <article>
@@ -12,6 +15,7 @@ const createHeader = (path) => {
     `
 }
 
+// Define a class for the custom header section component
 class HeaderSection extends HTMLElement {
     constructor() {
         super();

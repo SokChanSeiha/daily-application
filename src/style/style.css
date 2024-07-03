@@ -12,16 +12,32 @@
     --white-pure: #ffffff;
     --red-delete: #ff0000;
     --yellow-edit: #FFF000;
-    --blue-read: #049cd8;
+    --blue-read: #32c5ff;
 
     /* length and size properties */
+    --font-xl: 40px;
+    --font-lg: 30px;
+    --font-md: 20px;
+    --font-sm: 15px;
+    --font-xs: 9px;
+
+    --size-lg: 20px;
+    --size-md: 18px;
+    --size-sm: 16px;
+
     --full-height: 100%;
     --standard-width: 1440px;
+
+    /* Radius */
     --default-radius: 10px;
     --perfect-radius: 25px;
 }
 
 .body {    
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
     margin: auto;
     background-color: var(--main-theme);
     min-height: 1040px;
@@ -127,18 +143,18 @@
 }
 
 .title-input::placeholder {
-    font-size: 40px; /* Adjust the font size */
+    font-size: var(--font-lg); /* Adjust the font size */
     color: var(--white-space);
 }
 
 .description-input {
     margin: 5px 0px;
     padding: 20px 5px;
-    font-size: 20px;
+    font-size: var(--font-md);
     min-height: 620px;
     width: 100%;
     border: none;
-    border-bottom: 10px solid;
+    border-bottom: 10px solid white;
     outline: none; /* This removes the focus border */
     background-color: var(--white-pure);
     overflow-wrap: break-word;
@@ -146,7 +162,7 @@
 }
 
 .description-input::placeholder {
-    font-size: 20px;
+    font-size: var(--font-md);
     color: var(--white-space);
 }
 
@@ -165,13 +181,13 @@
 @media screen and (max-width:1080px) {
     .title-input {
         max-width: 500px;
-        font-size: 35px;
+        font-size: var(--font-lg);
     }
     .title-input::placeholder {
-        font-size: 30px; /* Adjust the font size */
+        font-size: var(--font-lg); /* Adjust the font size */
     }
     .description-input::placeholder {
-        font-size: 15px;
+        font-size: var(--font-sm);
     }
     .arrow {
         width: 50px;
@@ -190,16 +206,16 @@
     }
 }
 
-@media screen and (max-width:800px) {
+@media (max-width:800px) {
     .title-input {
         max-width: 200px;
-        font-size: 30px;
+        font-size: var(--font-lg);
     }
     .title-input::placeholder {
-        font-size: 25px; /* Adjust the font size */
+        font-size: var(--font-lg); /* Adjust the font size */
     }
     .description-input::placeholder {
-        font-size: 15px;
+        font-size: var(--font-sm);
     }
     .arrow {
         width: 40px;

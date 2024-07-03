@@ -1,7 +1,9 @@
+// Function to create the HTML for the footer
 const createFooter = (path) => {
     if (!path) {
         path = '.'
     }
+        // Return the HTML string for the header, using the provided or default 'path'
     return `
         <footer class="footer">
             <div class="footer-width">
@@ -25,6 +27,7 @@ const createFooter = (path) => {
         </footer>`
 }
 
+// Define a class for the custom footer section component
 class FooterSection extends HTMLElement {
     constructor() {
         super();

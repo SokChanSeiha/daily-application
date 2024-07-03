@@ -7,33 +7,42 @@
     <link rel="stylesheet" href="../style/style.css" />
   </head>
   <body class="body">
+  <!-- "header section" exported from component-->
     <header-section path=".."></header-section>
-
+  <!-- whole main content -->
     <div class="whole-content">
       <form class="content-area" id="create-form">
+        <!-- upper area of the create form -->
         <div class="upper-area">
+          <!-- return arrow & title input-->
           <div class="left-arrow">
             <img class="arrow" src="../icon/arrow leave.svg" id="arrow-return">
             <input class="title-input" type="text" id="title-create" placeholder="Title . . ." required />
           </div>
+
+          <!-- button to confirm the saving -->
           <button class="save" type="submit" id="save-button">
             <img class="save-button" src="../icon/save.svg" alt="">
           </button>
         </div>
-
+        <!-- input text area -->
         <textarea class="description-input"
           id="message-create"
           placeholder="Description . . ."
           required
         ></textarea>
+        
+        <!-- input date area -->
         <input class="date-input" type="date" id="date-create" required />
 
       </form>
     </div>
 
+  <!-- "footer section" exported from component-->
     <footer-section path=".."></footer-section>
   </body>
 
+  <!-- link to the JavaScript to get intereaction with create.js and components -->
   <script src="../components/create.js"></script>
   <script src="../components/header.js"></script>
   <script src="../components/footer.js"></script>

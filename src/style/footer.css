@@ -2,6 +2,11 @@
 
 /* a section to cover on whole footer */
 .footer {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+
     border-top:  7px solid;
     display: flex;
     justify-content:space-between;
@@ -40,6 +45,7 @@
     flex-direction: column;
     justify-content: flex-start;
     font-size: 20px;
+    font-weight:900;
 }
 
 /* area which style the grid of pictures */
@@ -181,6 +187,8 @@
         justify-content: space-evenly;
         gap: 30px;
     }
+
+    /* restyling on picture container box */
     .image-box {
         border-radius: 18px 0px;
         width: 100px;
@@ -193,6 +201,8 @@
         padding-top: 30px;
         width: 70px;
     }
+
+    /* size: on image astronut to 100px */
     .image-astronut {
         width: 100px;
     }
