@@ -1,0 +1,5 @@
+REVIEWBOARD_URL = "https://review.clp.kr"
+REPOSITORY = "HexCode/Sok-Chanseiha/Diary-Web"
+REPOSITORY_TYPE = "git"
+BRANCH = "feature/create-create-page"
+LAND_DEST_BRANCH = "feature/create-create-page"

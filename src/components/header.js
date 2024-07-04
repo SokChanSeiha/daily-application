@@ -1,22 +1,32 @@
-const createHeader = () => {
+// Function to create the HTML for the header
+const createHeader = (path) => {
+        // If 'path' is not provided, set it to '.'
+    if (!path) {
+        path = '.'
+    }
+        // Return the HTML string for the header, using the provided or default 'path'
     return`
     <header class="header header-size">
     <article>
         Dairy Application
     </article>
-    <img src="../icon/hamburger.svg" class="icon-burger" alt="hamburger menu bar">
+        <img src="${path}/icon/hamburger.svg" class="icon-burger" alt="hamburger menu bar">
     </header>
     `
 }
 
-class HomePage extends HTMLElement {
-    constructor (){
-        super()
+// Define a class for the custom header section component
+class HeaderSection extends HTMLElement {
+    constructor() {
+        super();
     }
-    connectedCallback(){
-        this.innerHTML = createNavbar();
+
+    connectedCallback() {
+        const path = this.getAttribute('path');
+        this.innerHTML = createHeader(path);
     }
 }
 
+
 //naming a callback component for "Header component"
-customElements.define("home-page-content", HomePage)
+customElements.define("header-section", HeaderSection)

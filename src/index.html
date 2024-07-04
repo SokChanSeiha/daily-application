@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@0;1&family=Nunito&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style/style.css" />
+</head>
+
+<body class="screen-color">
+  <!-- "header section" exported from component-->
+  <header-section></header-section>
+
+  <!-- main body content -->
+  <main class="body">
+    <!-- hero section -->
+    <section class="hero">
+      <img src="./icon/imagedino.svg" class="dinosour-image" alt="dinosour image" />
+    </section>
+
+    <!-- entry lists -->
+    <section class="content">
+      <!-- card render from local storage -->
+
+      <!-- create page go to-->
+      <div class="create-button" name="create button">
+        <a href="./pages/create.html">
+          <img class="create-image" src="./icon/create-btn.svg" alt="create button" />
+        </a>
+      </div>
+
+      <!-- categories menu option -->
+      <div class="category">
+        <h4 class="category-box">What's on your mind?</h4>
+      </div>
+
+      <!-- entries card list rendered from JavaScript -->
+      <div>
+        <div  class="entries-content" id="notes-container"></div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- "footer section" exported from component-->
+  <footer-section></footer-section>
+</body>
+
+  <!-- link to the JavaScript to get intereaction with create.js and components -->
+<script type="module" src="./components/header.js"></script>
+<script type="module" src="./components/footer.js"></script>
+<script type="module" src="script.js"></script>
+
+</html>

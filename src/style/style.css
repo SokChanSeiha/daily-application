@@ -1,0 +1,235 @@
+@import url("footer.css");
+@import url("header.css");
+@import url("create-page.css");
+@import url("update.css");
+
+
+:root {
+    /* color styling */
+    --main-theme: #2C3349;
+    --main-sub: #8290be;
+    --white-space: #d6d6d6;
+    --white-pure: #ffffff;
+    --red-delete: #ff0000;
+    --yellow-edit: #FFF000;
+    --blue-read: #32c5ff;
+
+    /* length and size properties */
+    --font-xl: 40px;
+    --font-lg: 30px;
+    --font-md: 20px;
+    --font-sm: 15px;
+    --font-xs: 9px;
+
+    --size-lg: 20px;
+    --size-md: 18px;
+    --size-sm: 16px;
+
+    --full-height: 100%;
+    --standard-width: 1440px;
+
+    /* Radius */
+    --default-radius: 10px;
+    --perfect-radius: 25px;
+}
+
+.body {    
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    margin: auto;
+    background-color: var(--main-theme);
+    min-height: 1040px;
+    height: var(--full-height);
+}
+
+.upper-area {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.left-arrow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.date-input {
+    border: none;
+    outline: none; /* This removes the focus border */
+    background-color: #8290be;
+    padding: 3px 5px;
+    width: 120px;
+    border-radius: var(--default-radius);
+    font-size: 15px;
+    color: var(--white-pure);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 20px 35px;
+}
+
+.save {
+    border: none;
+    background: none;  /* Optional: to remove background */
+    padding: 0;        /* Optional: to remove padding */
+    cursor: pointer;   /* Optional: to change cursor on hover */
+}
+
+.delete-button {
+    background-color: red;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+
+.whole-content {
+    max-width: var(--standard-width);
+    margin: auto;
+    padding: 25px 25px;
+}
+
+.content-area {
+    padding: 10px 25px;
+    background-color: var(--white-pure);
+    min-height: 800px;
+    border-radius: var(--perfect-radius);
+    position: relative;
+}
+
+
+.left-option {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.arrow {
+    width: 60px;
+}
+
+.save {
+    width: 60px;
+}
+
+.date-input {
+    border: none;
+    outline: none; /* This removes the focus border */
+    background-color: #8290be;
+    padding: 3px 5px;
+    width: 120px;
+    border-radius: var(--default-radius);
+    font-size: 15px;
+    color: var(--white-pure);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 20px 35px;
+}
+
+.title-input {
+    font-weight:bold ;
+    font-size: 40px;
+    height: 50px;
+    width: 800px;
+    border: none;
+    outline: none; /* This removes the focus border */
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.title-input::placeholder {
+    font-size: var(--font-lg); /* Adjust the font size */
+    color: var(--white-space);
+}
+
+.description-input {
+    margin: 5px 0px;
+    padding: 20px 5px;
+    font-size: var(--font-md);
+    min-height: 620px;
+    width: 100%;
+    border: none;
+    border-bottom: 10px solid white;
+    outline: none; /* This removes the focus border */
+    background-color: var(--white-pure);
+    overflow-wrap: break-word;
+    overflow:visible;
+}
+
+.description-input::placeholder {
+    font-size: var(--font-md);
+    color: var(--white-space);
+}
+
+.save-button {
+    display: flex;
+    justify-content: center;
+    border: none;
+    border-radius: 100%;
+    width: 65px;
+    height: 65px;
+    align-items: center;
+}
+
+
+
+@media screen and (max-width:1080px) {
+    .title-input {
+        max-width: 500px;
+        font-size: var(--font-lg);
+    }
+    .title-input::placeholder {
+        font-size: var(--font-lg); /* Adjust the font size */
+    }
+    .description-input::placeholder {
+        font-size: var(--font-sm);
+    }
+    .arrow {
+        width: 50px;
+    }
+    .save {
+        width: 50px;
+    }
+    .save-button {
+        display: flex;
+        justify-content: center;
+        border: none;
+        border-radius: 100%;
+        width: 50px;
+        height: 50px;
+        align-items: center;
+    }
+}
+
+@media (max-width:800px) {
+    .title-input {
+        max-width: 200px;
+        font-size: var(--font-lg);
+    }
+    .title-input::placeholder {
+        font-size: var(--font-lg); /* Adjust the font size */
+    }
+    .description-input::placeholder {
+        font-size: var(--font-sm);
+    }
+    .arrow {
+        width: 40px;
+    }
+    .save {
+        width: 40px;
+    }
+    .save-button {
+        display: flex;
+        justify-content: center;
+        border: none;
+        border-radius: 100%;
+        width: 45px;
+        height: 45px;
+        align-items: center;
+    }
+}

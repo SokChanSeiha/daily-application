@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Update Note</title>
+    <link rel="stylesheet" href="../style/style.css" />
+  </head>
+  <body class="body">
+  <!-- "header section" exported from component-->
+    <header-section path=".."></header-section>
+
+  <!-- whole main content -->
+    <div class="whole-content">
+      <form class="content-area" id="update-form">
+        <!-- upper area of the create form -->
+        <div class="upper-area">
+          <!-- return arrow & title input-->
+          <div class="left-arrow">
+            <img class="arrow" src="../icon/arrow leave.svg" id="arrow-return">
+            <!-- button to confirm the update -->
+            <input class="title-input" type="text" id="title-update" placeholder="Title" required />
+          </div>
+          
+          <!-- button to confirm the saving -->
+          <button class="save" type="submit" id="update-button">
+            <img class="save-button" src="../icon/save.svg" alt="">
+          </button>
+        </div>
+
+        <!-- input text area "has the saved data"-->
+        <textarea
+        class="description-input" id="message-update" placeholder="Description" required ></textarea>
+
+        <!-- input date area -->
+        <input class="date-input" type="date" id="date-update" required />
+      </form>
+
+    </div>
+
+  <!-- "footer section" exported from component-->
+    <footer-section path=".."></footer-section>
+  </body>
+
+  <!-- link to the JavaScript to get intereaction with create.js and components -->
+  <script src="../components/update.js"></script>
+  <script src="../components/header.js"></script>
+  <script src="../components/footer.js"></script>
+</html>
