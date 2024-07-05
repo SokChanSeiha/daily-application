@@ -1,16 +1,16 @@
 // Create Note component HTML
 const createNoteHTML = (id, title, description, date) => {
   return `
-        <div class="Note" data-id="${id}">
-          <div class="Note-header">
-            <h2 class="Note-title">${title}</h2>
+        <div class="entry" data-id="${id}">
+          <div class="entry-header">
+            <h2 class="entry-title">${title}</h2>
           </div>
-          <div class="Note-body">
-            <p class="Note-description">${description}</p>
+          <div class="entry-body">
+            <p class="entry-description">${description}</p>
           </div>
           <div class="option">
-            <span class="Note-date">${date}</span>
-            <div class="Note-footer">
+            <span class="entry-date">${date}</span>
+            <div class="entry-footer">
               <button class="button read" onclick="window.location.href='./pages/read.html?id=${id}'">
                 <img class="read" src="./icon/view.svg" alt="Read icon" /></button>        
               <button class="button edit" onclick="window.location.href='./pages/update.html?id=${id}'">
