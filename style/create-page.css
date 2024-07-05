@@ -12,9 +12,9 @@
 
 /* set: the dinosoaur image is auto responsive due to width set as % */
 .dinosour-image {
-    max-width: 1440px;
+    max-width: 1000px;
     width: 80%;
-    padding: 0px 25px;
+    padding: 0px 45px;
     margin: auto;
 }
 
@@ -262,12 +262,16 @@ including: category, entries list, create button */
     .Note-header {
         font-size: var(--font-md);    /* from 30px -> 20px */
     }
+    
+    .Note-description {
+        height: 10px;
+    }
 
     /* message */
     .Note-body {
         font-size: var(--font-md);
-        height: 115px;        /* from 100px -> 115px */
-        min-height: 60px;     /* from 100px -> 60px */
+        height: 10px;        /* from 100px -> 115px */
+
     }
     .Note-footer {
         gap: 25px;

@@ -3,21 +3,44 @@
 /* header */
 .header {
     /* positioning + setting: structure block */
-    margin: auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 25px;
-    height: 30px;
+    padding: 5px 25px;
+    height: 50px;
     max-width: var(--standard-width);
-
-    /* font & color styling */
-    color: white;
-    font-size: 40px;
     font-weight: bold;
+    }
+
+.title-header {
+    font-size: 35px;
+    color: white;
+    font-style: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
     }
 
 .icon-burger {
     width: 35px;
 }
 
+@media (max-width: 800px) {
+    .title-header {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 400px) {
+    .header {
+        padding: 0px 25px;
+        align-items: center;
+    }
+    .title-header {
+        font-size: 15px;
+        color: white;
+    }
+    .icon-burger {
+        width: 25px;
+    }
+}
