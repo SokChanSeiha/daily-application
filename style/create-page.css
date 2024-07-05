@@ -12,9 +12,9 @@
 
 /* set: the dinosoaur image is auto responsive due to width set as % */
 .dinosour-image {
-    max-width: 1440px;
+    max-width: 1000px;
     width: 80%;
-    padding: 0px 25px;
+    padding: 0px 45px;
     margin: auto;
 }
 
@@ -87,7 +87,7 @@ including: category, entries list, create button */
 }
 
 /* designing: for the whole display card */
-.Note {
+.entry {
     background-color: var(--white-pure);
     width: auto;
     padding: 5px;
@@ -96,13 +96,13 @@ including: category, entries list, create button */
 }
 
 /* sizing: title */
-.Note-header {
+.entry-header {
     font-size: var(--font-lg);
     max-width: 280px;
 }
 
 /* setting: customize the text oveflow */
-.Note-title {
+.entry-title {
     margin: 0px 10px;
     font-weight: bold;
     overflow: hidden;
@@ -111,7 +111,7 @@ including: category, entries list, create button */
 }
 
 /* setting: container for description message */
-.Note-body {
+.entry-body {
     padding: 5px 0px;
     font-size: var(--font-md);
     height: 120px;
@@ -119,7 +119,7 @@ including: category, entries list, create button */
 }
 
 /* setting: for description message */
-.Note-description {
+.entry-description {
     margin: 10px;
     text-overflow: ellipsis;
     resize: none;
@@ -134,7 +134,7 @@ including: category, entries list, create button */
 }
 
 /* designing + positioning: customize the date displays */
-.Note-date {
+.entry-date {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -147,7 +147,7 @@ including: category, entries list, create button */
 }
 
 /* positioning: button */
-.Note-footer {
+.entry-footer {
     display: flex;
     gap: 20px;
     margin: 0px 10px;
@@ -196,22 +196,22 @@ including: category, entries list, create button */
 /* Responsive design for tablets */
 @media (max-width: 1040px) {
 
-    .Note {
+    .entry {
         border:  8px solid var(--main-sub);    /* from 10px -> 8px */
     }
 
-    .Note-header {
+    .entry-header {
         max-width: 320px;   /* from 280px -> 320px */
     }
-    .Note-title {
+    .entry-title {
         margin: 0px 8px;    /* from 10px -> 8px */
     }
 
-    .Note-body {
+    .entry-body {
         min-height: 100px;  /* from 120px -> 100px */
     }
 
-    .Note-description {
+    .entry-description {
         margin: 8px;        /* from 10px -> 8px */
     }
 
@@ -255,21 +255,25 @@ including: category, entries list, create button */
 
 /* Responsive design for mobile devices */
 @media (max-width: 800px){
-    .Note {
+    .entry {
         border:  6px solid #8290be;    /* from 8px -> 6px */
     }
 
-    .Note-header {
+    .entry-header {
         font-size: var(--font-md);    /* from 30px -> 20px */
+    }
+    
+    .entry-description {
+        height: 10px;
     }
 
     /* message */
-    .Note-body {
+    .entry-body {
         font-size: var(--font-md);
-        height: 115px;        /* from 100px -> 115px */
-        min-height: 60px;     /* from 100px -> 60px */
+        height: 10px;        /* from 100px -> 115px */
+
     }
-    .Note-footer {
+    .entry-footer {
         gap: 25px;
     }
     .option {

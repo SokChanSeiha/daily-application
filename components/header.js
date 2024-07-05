@@ -6,10 +6,8 @@ const createHeader = (path) => {
     }
         // Return the HTML string for the header, using the provided or default 'path'
     return`
-    <header class="header header-size">
-    <article>
-        Dairy Application
-    </article>
+    <header class="header">
+        <h1 class="title-header">Dairy Application</h1>
         <img src="${path}/icon/hamburger.svg" class="icon-burger" alt="hamburger menu bar">
     </header>
     `
